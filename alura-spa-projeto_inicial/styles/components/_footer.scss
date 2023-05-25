@@ -1,0 +1,48 @@
+@import '../abstract/variaveis';
+
+@mixin bg-cores ($cores...){
+    background: linear-gradient(to left, $cores);
+}
+
+footer {
+    text-align: center;
+    font-size: $tamanho-do-texto / 2;
+    border-top: 2px solid $cor-primaria;
+    margin-top: 1rem;
+    padding: 1.2rem;
+    @include bg-cores($cor-primaria, $cor-secundaria, $cor-terciaria, $cor-primaria);
+    
+    i {
+        color: red;
+    }
+}
+
+#final-section {
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    .texto-final {
+        margin: 15px;
+        h4 {
+            font-size: $tamanho-do-texto / 1.5;
+            color: $cor-terciaria;
+            align-items: center;
+            padding: 5px;
+            text-transformation: uppercase;
+        }
+        h3 {
+            font-size: $tamanho-do-texto / 2;
+            color: $cor-primaria;
+            margin-top: 8px;
+        }
+        p {
+            font-size: $tamanho-do-texto / 3;
+            color: $cor-primaria;
+            margin-top: 8px;
+        }
+    }
+    img {
+        border-radius: 30px;
+    }
+}
+
